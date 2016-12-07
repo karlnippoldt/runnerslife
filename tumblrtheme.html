@@ -1,0 +1,628 @@
+<!doctype html>
+<html>
+	<head>
+		<title>{Title}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="alternate" type="application/rss+xml" href="{RSS}">
+		<link rel="shortcut icon" href="{Favicon}">
+		{block:Description}
+			<meta name="description" content="{MetaDescription}">
+		{/block:Description}
+
+		<meta name="if:Enable Jump Pagination" content="1">
+				
+		<meta name="if:Carousel photoset" content="0">
+				
+		<link href="//maxcdn.bootstrapcdn.com/bootswatch/3.2.0/superhero/bootstrap.min.css" rel="stylesheet">
+		<link href="//karlnippoldt.github.io/runnerslife/css/custom.css" rel="stylesheet">
+		<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+		<style type="text/css">
+			body {
+				/*padding-top: 70px;
+				padding-bottom: 40px;*/
+			}
+			.center {
+				text-align: center;
+			}
+			footer {
+				padding-top: 40px;
+				padding-bottom: 30px;
+				margin-top: 100px;
+				text-align: center;
+				border-top: 1px solid #e5e5e5;
+			}
+			.sidebar-item {
+				margin-top: 10px;
+			}
+			.tumblr-tags {
+				margin-top:10px;
+				margin-bottom:-5px;
+			}
+			.tumblr-tags .glyphicon, .tumblr-tags .fa {
+				top: 3px;
+				right: 5px;
+				position: relative;
+			}
+			.btn-img {
+				max-height: 17px;
+			}
+			.btn-img, a.sidebar-item .fa, a.sidebar-item .glyphicon {
+				float:left;
+				left:10px;
+				position: relative;
+				top: 2px;
+			}
+			.link-post {
+				margin-bottom: 10px;
+				padding-right: 30px;
+				padding-left: 30px;
+				white-space: normal;
+			}
+			.thumbnail {
+					margin-bottom: 15px;
+			}
+			.photoset {
+					width: 100%;
+				height: 100%;	
+			}
+			.photoset .caption {
+				visibility: hidden;
+					opacity:0;
+					background: rgba(0,0,0,0.4);
+					position: absolute;
+					right: 20px;
+					bottom: 20px;
+					left: 20px;
+					z-index: 10;
+					padding-top: 8%;
+					padding-bottom: 8%;
+					color: #ffffff;
+					text-align: center;
+					text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+					transition: visibility 0.2s linear, opacity 0.2s linear;
+			}
+			.photoset:hover .caption {
+				visibility: visible;
+					opacity:1;
+			}
+			.caption {
+				margin-top: 1em;
+			}
+			.caption p {
+				margin: 0 0 1em 0;
+			}
+			.caption blockquote p {
+				font-size: 1em;
+			}
+			.caption blockquote {
+				margin: 0 0 1em 0;
+				padding: 0 0 0 15px;
+			}
+			#tumblr_controls {
+				display: none;
+			}
+			div.panel-body {
+				padding: 15px 20px;
+				text-align: justify;
+			}
+			div.panel-heading {
+				text-align: center;
+			}
+			h3.panel-title {
+				font-weight: bold;
+			}
+		</style>
+		<style type="text/css">{CustomCSS}</style>
+		<!--[if lt IE 9]>
+			<script src="http://getbootstrap.com/assets/js/html5shiv.js"></script>
+			<script src="http://getbootstrap.com/assets/js/respond.min.js"></script>
+		<![endif]-->
+	</head>
+	<body>
+	<div class="container">
+    	<div class="row clearfix">
+    		<div class="col-md-12 column">
+				<nav class="navbar navbar-default" role="navigation">
+		                <div class="container-fluid">
+		                    <div class="navbar-header">
+		                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+		                        <b><a class="navbar-brand" href="http://runnerslife.mooo.com">Runner's Life</a></b>
+		                    </div>
+
+		                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		                        <ul class="nav navbar-nav">
+		                            <li>
+		                                <a href="http://runnerslife.mooo.com/">Home</a>
+		                            </li>
+		                            <li>
+		                                <a href="http://runnerslife.mooo.com/about.html">About Us</a>
+		                            </li>
+		                            <li class="active">
+		                                <a href="/">Blog</a>
+		                            </li>
+		                            <li>
+		                                <a href="http://runnerslife.mooo.com/contact.html">Contact</a>
+		                            </li>
+								{block:HasPages}
+									{block:Pages}
+									<li><a href="{URL}">{Label}</a></li>
+									{/block:Pages}
+								{/block:HasPages}
+								{block:AskEnabled}
+									<li>
+										<a href="/ask">{AskLabel}</a>
+									</li>
+								{/block:AskEnabled}
+								{block:SubmissionsEnabled}
+									<li>
+										<a href="/submit">{SubmitLabel}</a>
+									</li>
+								{/block:SubmissionsEnabled}
+		                        </ul>
+		                        <button type="button" class="navbar-right btn btn-primary navbar-btn text-uppercase" data-toggle="modal" data-target="#signup">Subscribe</button>
+		                        <div class="visible-xs pad-bt-sm"></div>
+		                    </div>
+		                </div>
+		            </nav>
+
+
+					<div class="row" id="posts">
+						<div class="col-md-1 hidden-xs hidden-sm"></div>
+						<div class="col-md-7">
+							{block:Posts}
+							<div class="panel panel-default">
+
+		{block:Answer}
+			<div class="panel-body">
+				<div class="well">
+					<div class="media">
+						<img src="{AskerPortraitURL-64}" class="media-object pull-left">
+						<div class="media-body">
+							<h4 class="media-heading">
+								{Asker} asked
+							</h4>
+							{Question}
+						</div>
+					</div>
+				</div>
+				<div class="caption">
+				{Answer}
+				</div>
+		{/block:Answer}
+
+		{block:Audio}
+			<div class="panel-body">
+				{AudioPlayerBlack}
+				{block:Caption}
+					<div class="caption">{Caption}</div>
+				{/block:Caption}
+		{/block:Audio}
+
+		{block:Chat}
+			{block:Title}
+				<div class="panel-heading">
+					<h3 class="panel-title"><a href="{Permalink}">{Title}</a></h3>
+				</div>
+			{/block:Title}
+			<div class="panel-body">
+				<div class="post chat">
+					<dl class="dl-horizontal">
+						{block:Lines}
+							<dt class="{Alt} user_{UserNumber}">
+								{block:Label}
+									<span>{Label}</span>
+								{/block:Label}
+							</dt>
+							<dd>
+								{Line}
+							</dd>
+						{/block:Lines}
+					</dl>
+				</div>
+		{/block:Chat}
+
+		{block:Link}
+			{block:Title}
+			<div class="panel-heading">
+				<h3 class="panel-title"><a href="{Permalink}">{Title}</a></h3>
+			</div>
+			{/block:Title}
+			<div class="panel-body">
+				<a href="{URL}" class="link-post btn btn-info btn-lg" {Target}>{Name} &raquo;</a>
+				{block:Description}
+					<div class="caption">{Description}</div>
+				{/block:Description}
+		{/block:Link}
+
+		{block:Panorama}
+			{LinkOpenTag}
+				<img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+			{LinkCloseTag}
+
+			{block:Caption}
+				<div class="caption">{Caption}</div>
+			{/block:Caption}
+		{/block:Panorama}
+
+		{block:Photo}
+			<div class="panel-body">
+				<div class="center">
+					{LinkOpenTag}
+						<img src="{PhotoURL-1280}" alt="{PhotoAlt}" class="img-thumbnail img-responsive">
+					{LinkCloseTag}
+				</div>
+				{block:Caption}
+					<div class="caption">
+						{Caption}
+					</div>
+				{/block:Caption}
+		{/block:Photo}
+
+		{block:Photoset}
+			<div class="panel-body">
+		<!--
+			{Photoset-500}
+		-->
+			{block:IfNotCarouselPhotoset}
+				<script type="text/javascript">
+					var layout = {JSPhotosetLayout};
+					var photocount = 0;
+					var photoclass = '', photos = [];
+					for(var i=0;i<layout.length;i++) {
+						switch(layout[i]) {
+							case "1":
+								photoclass = 'col-md-12';
+								break;
+							case "2":
+								photoclass = 'col-md-6';
+								break;
+							case "3":
+								photoclass = 'col-md-4';
+								break;
+							case "4":
+								photoclass = 'col-md-3';
+								break;
+						}
+						for(var j=0; j < parseInt(layout[i]); j++) {
+							photos[photocount] = {
+								'class': photoclass,
+								rowsize: parseInt(layout[i])
+							};
+							photocount++;
+						}
+					}
+					photocount = 0;
+					var rowcount = 0;
+				</script>
+
+				{block:Photos}
+					<script>
+						if(rowcount == 0) {
+							document.write('<div class="row">');
+						}
+					</script>
+
+					<div id="photosetphoto" class="col-md-3">
+						<script>
+							var photo = document.getElementById('photosetphoto');
+							photo.className = photos[photocount].class;
+							photo.removeAttribute('id');
+							rowcount++;
+						</script>
+						<div class="thumbnail center photoset">
+									{LinkOpenTag}
+							<img src="{PhotoURL-1280}" alt="{PhotoAlt}" class="img-responsive">
+								{LinkCloseTag}
+							{block:Caption}
+										{LinkOpenTag}
+								<span class="caption">
+									{Caption}
+								</span>
+										{LinkCloseTag}
+							{/block:Caption}
+						</div>
+					</div>
+					<script>
+						if(rowcount == photos[photocount].rowsize) {
+							document.write('</div>');
+							rowcount = 0;
+						}
+						photocount++;                                        
+					</script>
+				{/block:Photos}
+				{block:Caption}
+					<div class="caption">{Caption}</div>
+				{/block:Caption}
+			{/block:IfNotCarouselPhotoset}
+
+			{block:IfCarouselPhotoset}
+				<div id="photoset-carousel" class="carousel slide">
+					<script>
+						var n=0;
+						document.write('<ol class="carousel-indicators">');
+						{block:Photos}
+						document.write(
+								'<li data-target="#photoset-carousel" data-slide-to="'+n+'"></li>'
+						);
+						n++;
+						{/block:Photos}
+						document.write('</ol>');
+					</script>
+					<div class="carousel-inner">
+					{block:Photos}
+						<div class="item">
+							<img src="{PhotoURL-1280}" alt="{PhotoAlt}">
+								{block:Caption}
+									<div class="carousel-caption">
+										{Caption}
+									</div>
+								{/block:Caption}
+						</div>
+						{/block:Photos}
+					</div>
+					<a class="left carousel-control" href="#photoset-carousel" data-slide="prev">
+						<span class="glyphicon glyphicon-chevron-left"></span>
+					</a>
+					<a class="right carousel-control" href="#photoset-carousel" data-slide="next">
+						<span class="glyphicon glyphicon-chevron-right"></span>
+					</a>
+				</div>
+				{block:Caption}
+					<div class="caption">{Caption}</div>
+				{/block:Caption}
+			{/block:IfCarouselPhotoset}
+		{/block:Photoset}
+
+		{block:Quote}
+			{block:Title}
+			<div class="panel-heading">
+				<h3 class="panel-title"><a href="{Permalink}">{Title}</a></h3>
+			</div>
+			{/block:Title}
+			<div class="panel-body">
+				<blockquote>
+					<p>"{Quote}"</p>
+					{block:Source}
+					<small>
+						<cite>{Source}</cite>
+					</small>
+					{/block:Source}
+				</blockquote>
+		{/block:Quote}
+
+		{block:Text}
+			{block:Title}
+				<div class="panel-heading">
+					<h3 class="panel-title"><a href="{Permalink}">{Title}</a></h3>
+				</div>		
+			{/block:Title}
+			<div class="panel-body">
+			{Body}			
+		{/block:Text}
+
+		{block:Video}
+			<div class="panel-body">
+				<div class="center">
+				{Video-500}
+				</div>
+				{block:Caption}
+					<div class="caption">{Caption}</div>
+				{/block:Caption}
+		{/block:Video}
+
+								{block:HasTags}
+								<div class="tumblr-tags">
+									<span class="fa fa-tag"></span>
+									{block:Tags}
+										<a href="{TagURL}" class="label label-default">{Tag}</a>
+									{/block:Tags}
+								</div>
+								{/block:HasTags}
+														</div>
+								<div class="panel-footer">
+									<a href="{Permalink}">
+										<div class="notes pull-right">
+											{block:NoteCount}
+												<span class="badge" title="{NoteCountWithLabel}">{NoteCount}</span>
+											{/block:NoteCount}
+										</div>
+										<div class="footer for_permalink">
+											<div class="date">
+												{block:Reblog}
+													Reblogged {TimeAgo} from {ReblogParentName}
+													{block:RebloggedFromReblog}
+														(<span style="text-transform:lowercase;">Originally from {ReblogRootName}</span>)
+													{/block:RebloggedFromReblog}
+												{/block:Reblog}
+
+													{block:Date}
+														Posted {TimeAgo} {block:source}from {source}{/block:source}
+													{/block:Date}
+												{block:NotReblog}
+												{/block:NotReblog}
+											</div>
+										</div>
+									</a>
+											
+									{block:ContentSource}
+									<a href="{SourceURL}" class="source_url">
+										{lang:Source}:
+										{SourceTitle}
+									</a>
+									{/block:ContentSource}
+								</div>
+							</div>
+							
+							{block:PostNotes}
+							<div class="panel panel-default">
+								<div class="panel-heading">Notes</div>
+											<div class="panel-body">
+											{PostNotes}
+																</div>
+							</div>
+							{/block:PostNotes}
+							
+						{/block:Posts}
+
+						{block:IfNotEnableJumpPagination}
+							{block:Pagination}
+							<ul class="pager">
+								{block:PreviousPage}
+									<li class="previous"><a href="{PreviousPage}">&larr; Newer</a></li>
+								{/block:PreviousPage}
+
+								{block:NextPage}
+									<li class="next"><a href="{NextPage}">Older &rarr;</a></li>
+								{/block:NextPage}
+
+								</ul>
+							{/block:Pagination}
+						{/block:IfNotEnableJumpPagination}
+
+						{block:IfEnableJumpPagination}
+						<div class="row center">
+							{block:Pagination}
+							<ul class="pagination">
+								{block:PreviousPage}
+									<li><a href="{PreviousPage}">&laquo;</a></li>
+								{/block:PreviousPage}
+
+								{block:JumpPagination length="5"}
+									{block:CurrentPage}
+										<li class="active"><a href="#">{PageNumber}</a></li>
+									{/block:CurrentPage}
+
+									{block:JumpPage}
+										<li><a href="{URL}">{PageNumber}</a></li>
+									{/block:JumpPage}
+								{/block:JumpPagination}
+
+								{block:NextPage}
+									<li><a href="{NextPage}">&raquo;</a></li>
+								{/block:NextPage}
+							</ul>
+							{/block:Pagination}
+						</div>
+						{/block:IfEnableJumpPagination}
+
+					</div>
+
+					<div class="col-md-3">
+						<div class="well well-lg">
+							<div class="media">
+								<div class="media-body">
+									{block:Description}
+										<p>{Description}</p>
+									{/block:Description}
+								</div>
+							</div>
+
+							<form action="/search" method="get" class="form-horizontal sidebar-item">
+									<div class="input-group">
+											<span class="input-group-addon">
+												<span class="fa fa-search"></span>    
+											</span>
+										<input type="text" name="q" value="{SearchQuery}" class="form-control" placeholder="Search">
+									</div>
+							</form>
+
+							<div class="pad-top-sm">
+								<div id="button-archive">
+									<a href="/archive" class="btn btn-default btn-block sidebar-item">
+										<span class="fa fa-archive"></span>
+										{lang:Archive}
+									</a>
+								</div>
+								<div id="button-rss">
+									<a href="{RSS}" class="btn btn-default btn-block sidebar-item">
+										<span class="fa fa-rss"></span>
+										{lang:RSS feed}
+									</a>
+								</div>
+								<div id="button-random">
+									<a href="/random" class="btn btn-default btn-block sidebar-item">
+										<span class="fa fa-random"></span>
+										{lang:Random}
+									</a>
+								</div>
+								<div id="button-follow">
+									<a href="http://www.tumblr.com/follow/{PlaintextName}" class="btn btn-default btn-block sidebar-item">
+										<span class="fa fa-tumblr-square"></span>
+										Follow
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-1 hidden-xs hidden-sm"></div>
+
+			<div class="col-md-12">
+				<p class="text-center">
+					<small>Copyright &copy;
+                        <script>
+                        <!--
+                        var year=new Date();
+                        year=year.getYear();
+                        if (year<1900) year+=1900;
+                        document.write(year);
+                        //-->
+                        </script>
+                    Karl Nippoldt. All Rights Reserved.
+                    </small>
+				</p>
+			</div>
+				</div>
+			</div>
+		</div>
+		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	    <!-- Include all compiled plugins (below), or include individual files as needed -->
+	    <script src="//karlnippoldt.github.io/runnerslife/js/bootstrap.min.js"></script>
+		<script>
+			$(document).ready(function(){
+				$('.carousel-inner .item:first').addClass('active');
+				$('.carousel').carousel();
+			});
+		</script>
+		<!--signup modal-->
+            <div class="modal fade" id="signup">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                            <h4 class="modal-title">Subscribe to Runner's Life</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="form-group text-center">
+                              <form accept-charset="UTF-8" action="https://madmimi.com/signups/subscribe/115230" method="post" target="_parent">
+                                 <div style="margin:0;padding:0;display:inline">
+                                    <input name="utf8" type="hidden" value="?"/>
+                                    <input name="authenticity_token" type="hidden" value="4Ru1aOUooUzEM2huXEmpDlWNhfx3ThqmT3FJeqZzIdE="/>
+                                 </div>
+                                 <div class="indicates-required text-right"><span class="asterisk">*</span> indicates required</div>
+                                 <div class="input-group pad-top-sm">
+                                    <span class="input-group-addon"><span class="fa fa-envelope"></span>&nbsp;&nbsp;Email Address <span class="asterisk">*</span></span>
+                                    <input id="signup_email" name="signup[email]" type="email" class="form-control" required>
+                                 </div>
+                                 <div class="input-group pad-top-sm">
+                                    <span class="input-group-addon"><span class="fa fa-user"></span>&nbsp;&nbsp;First Name</span>
+                                    <input id="signup_first_name" name="signup[first_name]" type="text" class="form-control">
+                                 </div>
+                                 <div class="input-group pad-top-sm">
+                                    <span class="input-group-addon"><span class="fa fa-users"></span>&nbsp;&nbsp;Last Name</span>
+                                    <input id="signup_last_name" name="signup[last_name]" type="text" class="form-control">
+                                 </div>
+                                 <div class="pad-top-sm">
+                                    <button type="submit" class="submit btn btn-primary btn-block text-uppercase" value="Subscribe" id="webform_submit_button"><span class="fa fa-paper-plane"></span>&nbsp;&nbsp;&nbsp;Subscribe</button>
+                                 </div>
+                              </form>
+                           </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div><!-- /.modal-content -->
+                </div><!-- /.modal-dialog -->
+            </div><!-- /.modal -->
+	</body>
+</html>
