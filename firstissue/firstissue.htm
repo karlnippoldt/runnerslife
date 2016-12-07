@@ -1,0 +1,1090 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!-- saved from url=(0028)https://madmimi.com/s/71a715 -->
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" xmlns:o="urn:schemas-microsoft-com:office:office"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	
+<script src="https://js-agent.newrelic.com/nr-998.min.js"></script><script src="./firstissue_files/cb=gapi.loaded_1" async=""></script><script src="./firstissue_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./firstissue_files/plusone.js" gapi_processed="true"></script><script id="twitter-wjs" src="./firstissue_files/widgets.js"></script><script id="facebook-jssdk" src="./firstissue_files/sdk.js"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"1e083e1800","applicationID":"13119952","transactionName":"c1pdRBALVVUDRR5HR19YXEQLC1dKSVpYWlxf","queueTime":0,"applicationTime":320,"agent":""}</script>
+<script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,t,n){function r(n){if(!t[n]){var o=t[n]={exports:{}};e[n][0].call(o.exports,function(t){var o=e[n][1][t];return r(o||t)},o,o.exports)}return t[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(e,t,n){function r(){}function o(e,t,n){return function(){return i(e,[(new Date).getTime()].concat(u(arguments)),t?null:this,n),t?void 0:this}}var i=e("handle"),a=e(2),u=e(3),c=e("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit"],l="api-",p=l+"ixn-";a(s,function(e,t){f[t]=o(l+t,!0,"api")}),f.addPageAction=o(l+"addPageAction",!0),f.setCurrentRouteName=o(l+"routeName",!0),t.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(e,t){var n={},r=this,o="function"==typeof t;return i(p+"tracer",[Date.now(),e,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return t.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,t){d[t]=o(p+t)}),newrelic.noticeError=function(e){"string"==typeof e&&(e=new Error(e)),i("err",[e,(new Date).getTime()])}},{}],2:[function(e,t,n){function r(e,t){var n=[],r="",i=0;for(r in e)o.call(e,r)&&(n[i]=t(r,e[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],3:[function(e,t,n){function r(e,t,n){t||(t=0),"undefined"==typeof n&&(n=e?e.length:0);for(var r=-1,o=n-t||0,i=Array(o<0?0:o);++r<o;)i[r]=e[t+r];return i}t.exports=r},{}],ee:[function(e,t,n){function r(){}function o(e){function t(e){return e&&e instanceof r?e:e?c(e,u,i):i()}function n(n,r,o){if(!p.aborted){e&&e(n,r,o);for(var i=t(o),a=v(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var f=s[w[n]];return f&&f.push([y,n,r,i]),i}}function d(e,t){b[e]=v(e).concat(t)}function v(e){return b[e]||[]}function g(e){return l[e]=l[e]||o(n)}function m(e,t){f(e,function(e,n){t=t||"feature",w[n]=t,t in s||(s[t]=[])})}var b={},w={},y={on:d,emit:n,get:g,listeners:v,context:t,buffer:m,abort:a,aborted:!1};return y}function i(){return new r}function a(){(s.api||s.feature)&&(p.aborted=!0,s=p.backlog={})}var u="nr@context",c=e("gos"),f=e(2),s={},l={},p=t.exports=o();p.backlog=s},{}],gos:[function(e,t,n){function r(e,t,n){if(o.call(e,t))return e[t];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,t,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[t]=r,r}var o=Object.prototype.hasOwnProperty;t.exports=r},{}],handle:[function(e,t,n){function r(e,t,n,r){o.buffer([e],r),o.emit(e,t,n)}var o=e("ee").get("handle");t.exports=r,r.ee=o},{}],id:[function(e,t,n){function r(e){var t=typeof e;return!e||"object"!==t&&"function"!==t?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");t.exports=r},{}],loader:[function(e,t,n){function r(){if(!h++){var e=y.info=NREUM.info,t=l.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&t))return f.abort();c(b,function(t,n){e[t]||(e[t]=n)}),u("mark",["onload",a()],null,"api");var n=l.createElement("script");n.src="https://"+e.agent,t.parentNode.insertBefore(n,t)}}function o(){"complete"===l.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=e("handle"),c=e(2),f=e("ee"),s=window,l=s.document,p="addEventListener",d="attachEvent",v=s.XMLHttpRequest,g=v&&v.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:v,REQ:s.Request,EV:s.Event,PR:s.Promise,MO:s.MutationObserver},e(1);var m=""+location,b={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-998.min.js"},w=v&&g&&g[p]&&!/CriOS/.test(navigator.userAgent),y=t.exports={offset:a(),origin:m,features:{},xhrWrappable:w};l[p]?(l[p]("DOMContentLoaded",i,!1),s[p]("load",r,!1)):(l[d]("onreadystatechange",o),s[d]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+	<title>Run for the Challenge - August 2014 Runner's Life</title>
+  <!--[if gte mso 9]><xml>
+   <o:OfficeDocumentSettings>
+    <o:PixelsPerInch>96</o:PixelsPerInch>
+   </o:OfficeDocumentSettings>
+  </xml><![endif]-->
+  <meta property="og:title" content="Run for the Challenge - August 2014 Runner&#39;s Life">
+  <meta property="og:type" content="article">
+  <meta property="og:url" content="https://madmimi.com/s/71a715">
+
+  <meta property="og:updated_time" content="2014-07-24T23:21:09+01:00">
+
+    <meta property="og:description" content="In this issue: Our writers explore the theme of beginning your life as a distance runner. What does it feel like to take those first steps on a 2-mil...">
+
+  <meta property="og:image" content="https://snaps.madmimi.com/v2/thumbs.php?size=b&amp;wait=120&amp;url=https%3A%2F%2Fmadmimi.com%2Fp%2F71a715">
+    <meta property="og:image" content="https://cascade.madmimi.com/promotion_images/0726/5610/original/whiteheader.png?1406044749">
+    <meta property="og:image" content="https://cascade.madmimi.com/promotion_images/0726/2732/original/file1571312715934.jpg?1406011127">
+    <meta property="og:image" content="https://cascade.madmimi.com/promotion_images/0726/5942/original/spencer.jpg?1406047195">
+    <meta property="og:image" content="https://cascade.madmimi.com/promotion_images/0726/5973/original/jarrett.jpg?1406047397">
+  <meta property="og:site_name" content="Mad Mimi">
+
+  <style></style>
+  
+  <style>
+    .ecxmodule,.ecxmodule.ecxmadmimi-text-container{width:524px}div.ecxmodule table tbody tr td div.ecxmadmimi-text-container ul li{width:539px}.ecxmodule .ecxmadmimi-text-container h1,.ecxmodule .ecxmadmimi-text-container h2,.ecxmodule .ecxmadmimi-text-container h3,.ecxmodule .ecxmadmimi-text-container h4,.ecxmodule .ecxmadmimi-text-container h5,.ecxmodule .ecxmadmimi-text-container h6{font-weight:bold}.ecxmodule .ecxmadmimi-text-container ul{padding-left:10px !important}.ecxmodule .ecxmadmimi-text-container ol{padding-left:30px !important}#ecxsocial_share_table td,td#ecxsocial_share_tweakers{padding-bottom:20px !important}td#ecxmadmimi_footer_right{padding-bottom:5px}.ecxmodule.ecxtext,.ecxmodule.ecxlarge-image-container,.ecxmodule.ecxsmall-image-container{padding:5px 0 10px}.ecxmodule .ecxmadmimi-text-container .ecxmimi-bullet img{display:none}.ecxmodule .ecxmadmimi-text-container table.ecxoutside-block{display:block !important;visibility:visible !important}
+
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 11px !important;
+            height: 11px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 5px !important;
+            height: 5px;
+            background-color: #3A352A;
+            font-size: 16px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #3A352A;
+            font-size: 14px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #3A352A;
+            font-size: 12px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 11px !important;
+            height: 11px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 5px !important;
+            height: 5px;
+            background-color: #FFFFFF;
+            font-size: 15px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #3A352A;
+            font-size: 14px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #B22222;
+            font-size: 14px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 11px !important;
+            height: 11px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 5px !important;
+            height: 5px;
+            background-color: #555555;
+            font-size: 15px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #000000;
+            font-size: 12px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #3A352A;
+            font-size: 14px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #6F6F6E;
+            font-size: 14px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 11px !important;
+            height: 11px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 5px !important;
+            height: 5px;
+            background-color: #555555;
+            font-size: 15px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 14px !important;
+            height: 14px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 8px !important;
+            height: 8px;
+            background-color: #555555;
+            font-size: 26px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 11px !important;
+            height: 11px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 5px !important;
+            height: 5px;
+            background-color: #555555;
+            font-size: 15px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #3A352A;
+            font-size: 12px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #3A352A;
+            font-size: 12px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #3A352A;
+            font-size: 14px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #2F4F4F;
+            font-size: 13px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 11px !important;
+            height: 11px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 5px !important;
+            height: 5px;
+            background-color: #555555;
+            font-size: 15px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 11px !important;
+            height: 11px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 5px !important;
+            height: 5px;
+            background-color: #696969;
+            font-size: 15px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #3A352A;
+            font-size: 12px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 11px !important;
+            height: 11px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 5px !important;
+            height: 5px;
+            background-color: #000000;
+            font-size: 16px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 11px !important;
+            height: 11px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 5px !important;
+            height: 5px;
+            background-color: #555555;
+            font-size: 15px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #3A352A;
+            font-size: 12px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #262424;
+            font-size: 14px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #333E76;
+            font-size: 14px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 11px !important;
+            height: 11px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 5px !important;
+            height: 5px;
+            background-color: #3A352A;
+            font-size: 16px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 11px !important;
+            height: 11px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 5px !important;
+            height: 5px;
+            background-color: #0000CD;
+            font-size: 15px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 11px !important;
+            height: 11px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 5px !important;
+            height: 5px;
+            background-color: #3C1926;
+            font-size: 15px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 11px !important;
+            height: 11px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 5px !important;
+            height: 5px;
+            background-color: #555555;
+            font-size: 15px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #555555;
+            font-size: 14px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #3A352A;
+            font-size: 12px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 11px !important;
+            height: 11px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 5px !important;
+            height: 5px;
+            background-color: #555555;
+            font-size: 15px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #262424;
+            font-size: 14px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #000000;
+            font-size: 14px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #000000;
+            font-size: 14px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 10px !important;
+            height: 10px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 4px !important;
+            height: 4px;
+            background-color: #FFF5DC;
+            font-size: 12px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 11px !important;
+            height: 11px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 5px !important;
+            height: 5px;
+            background-color: #696969;
+            font-size: 15px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+          .ecxmodule .ecxmadmimi-text-container table.ecxoutside-block {
+            width: 11px !important;
+            height: 11px;
+            padding: 0.6em 0 0 0;
+          }
+          .ecxmodule .ecxmadmimi-text-container .ecxoutside-block td.ecxmimi-bullet {
+            display: block;
+            width: 5px !important;
+            height: 5px;
+            background-color: #2B3E50;
+            font-size: 17px !important;
+            line-height: 1.5em !important;
+            max-height: 1.5em !important;
+          }
+        
+  </style>
+  <!--[if gte mso 9]>
+    <![endif]--><!--[if gte mso 9]><style>
+      ol{list-style-type:square !important}.madmimi-text-container ul,.madmimi-text-container ol{padding:0 !important;margin:0 !important;list-style:square inside none !important}li.p_line_height{line-height:1em !important;margin-bottom:0.5em}.madmimi-text-container ul li span{font-size:13px !important}.madmimi-image-container p{mso-text-raise:0;mso-line-height-rule:exactly;-mso-line-height-rule:exactly;mso-table-lspace:0;mso-table-rspace:0}.madmimi-text-container,p,h1,h2{mso-line-height-rule:exactly;-mso-line-height-rule:exactly;line-height:130% !important}div.madmimi-image-container p{line-height:1em !important}#madmimi_outer_wrapper ul{vertical-align:middle}td#madmimi_footer_content table,td#madmimi_footer_content tbody,td#madmimi_footer_content tr,td#madmimi_footer_content td{width:100%}td#madmimi_body_content{padding-left:30px !important;padding-right:30px !important}table#madmimi_wrapper,table#madmimi_wrapper table#subtle_wrapper,table#madmimi_body,table#madmimi_header,table#madmimi_footer{border-collapse:collapse !important;mso-table-lspace:0pt;mso-table-rspace:0pt}#madmimi_wrapper.borders table#madmimi_header{mso-border-right-alt:1px;mso-border-left-alt:1px;mso-border-top-alt:1px;mso-border-bottom-alt:0}#madmimi_wrapper.borders.footer-subtle table#madmimi_body{mso-border-right-alt:1px;mso-border-left-alt:1px;mso-border-top-alt:0;mso-border-bottom-alt:1px}#madmimi_wrapper.borderless table#madmimi_body{mso-border-right-alt:0;mso-border-left-alt:0;mso-border-top-alt:0;mso-border-bottom-alt:0}#madmimi_wrapper.borders table#madmimi_body{mso-border-right-alt:1px;mso-border-left-alt:1px;mso-border-top-alt:0;mso-border-bottom-alt:0}#madmimi_wrapper.borderless table#madmimi_body,#madmimi_wrapper.borderless table#madmimi_footer,#madmimi_wrapper.borderless table#madmimi_header{mso-border-right-alt:0;mso-border-left-alt:0;mso-border-top-alt:0;mso-border-bottom-alt:0;border-color:transparent;border:none;border-width:0}#madmimi_wrapper.borders table#madmimi_footer{mso-border-right-alt:1px;mso-border-left-alt:1px;mso-border-top-alt:0;mso-border-bottom-alt:1px}#madmimi_wrapper.borders.footer-subtle table#madmimi_footer{border-width:0}.madmimi-text-container span.mimi-ul table{margin-top:0 !important;margin-left:0 !important;margin-right:0 !important;margin-bottom:0 !important}.madmimi-text-container span.mimi-ul table td.mimi-bullet{line-height:120% !important}.madmimi-text-container span.mimi-ul,.madmimi-text-container span.mimi-ol{line-height:120% !important;margin-bottom:0 !important}#social_share_table td,#social_share_table td#social_share_tweakers{padding-bottom:20px !important}#madmimi_wrapper .madmimi-call-to-action-container{padding:0 !important;margin:0 0 20px 0 !important}
+
+      span.hide_from_outlook {
+        display: none;
+      }
+      v\:* {
+        behavior: url(#default#VML);
+        display:inline-block;
+      }
+    </style><![endif]--><!--[if gte mso 9]>
+  <![endif]-->
+
+
+<style>* #madmimi_outer_wrapper q:before { content: &#39; }* #madmimi_outer_wrapper q:after { content: &#39; }</style><link rel="stylesheet" media="screen" href="./firstissue_files/mimio.css"><script type="text/javascript" charset="utf-8" async="" src="./firstissue_files/button.5546439b5d743401ca910708312f6e81.js"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;-moz-border-radius:8px;-webkit-border-radius:8px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif);cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent;_background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yL/r/s816eWC-2sl.gif)}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}</style></head>
+<body bgcolor="#2B3E50" style="margin: 0px; padding: 0px; background-color: rgb(43, 62, 80);">
+  <div id="mimi_background_color_wrapper" style="min-width: 630px; background-color: #2B3E50;">
+    <!--[if gte mso 9]>
+    <![endif]--><!--[if gte mso 9]><v:background fill="t">
+    <v:fill type="tile" color="#2B3E50"></v:fill>
+    </v:background><![endif]--><!--[if gte mso 9]>
+    <![endif]-->
+    <table height="100%" width="100%" cellpadding="0" cellspacing="0" border="0">
+      <tbody><tr>
+        <td valign="top" align="left">
+          <p style="display:none;font-size:0px;color:transparent">In this issue: Our writers explore the theme of beginning your life as a distance runner. What does it feel like to take those first steps on a 2-mil</p>
+          <p style="mso-hide:all;font-size:0px;background-color:transparent;position:absolute;height:1px"><img src="https://madmimi.com/s/71a715" alt="" border="0" width="0" height="0"></p>
+          <div id="madmimi_outer_wrapper" style="margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto; padding-top: 20px; padding-right: 0; padding-bottom: 0; padding-left: 0;" class="animation">
+  <!--[if gte mso 9]>
+  <![endif]--><!--[if gte mso 9]><p style="line-height: 7px; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 1px; text-align: justify; unicode-bidi: embed; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: transparent;" align="justify">
+      <br>
+  </p><![endif]--><!--[if gte mso 9]>
+  <![endif]-->
+      <table id="social_share_table" align="center" style="font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; text-align: left; font-size: 11px !important; max-width: 590px; border-collapse: collapse; border-spacing: 0; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" width="590" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+              <td align="left" id="social_share_buttons" style="text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 10px; padding-left: 8px;">
+                    
+      <span style="display:inline-block;font-size:13px;" class="">
+        <!--[if gte mso 9]>
+          <![endif]--><!--[if gte mso 9]><v:roundrect emaillinkgroup="b9fda6ce-9bf7-4d48-a10e-0bc992a5ba63" style="height:22px;v-text-anchor:middle;width:39px;" arcsize="50%" stroke="f" fillcolor="#667CAD" href="#" class="social_link" onclick="show_share('facebook')" data-mimi-stat-url="[[facebook_like]]">
+            <w:anchorlock></w:anchorlock>
+            <v:textbox inset="0,0,0,0">
+              <center>
+                <a emaillinkgroup="b9fda6ce-9bf7-4d48-a10e-0bc992a5ba63" style="color: #fafafa; display: inline-block; text-decoration: none; white-space: nowrap; height: 20px; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 13px; line-height: 170%; font-weight: normal; mso-text-raise: 4px; padding-top: 0; padding-right: 7px; padding-bottom: 0; padding-left: 7px; background-color: #667CAD;" title="Like this on Facebook" href="#" class="social_link" onclick="show_share('facebook')" data-mimi-stat-url="[[facebook_like]]"><span style="color: #ffffff; background-color: #667CAD; font-size: 13px;">Like</span></a>
+              </center>
+            </v:textbox>
+          </v:roundrect><![endif]--><!--[if gte mso 9]>
+        <![endif]-->
+        <span class="hide_from_outlook"><a emaillinkgroup="b9fda6ce-9bf7-4d48-a10e-0bc992a5ba63" style="color: #ffffff; display: inline-block; text-decoration: none; white-space: nowrap; border-radius: 12px; margin-bottom: 10px; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 13px; font-weight: normal; line-height: 165%; text-align: center; width: auto; -webkit-text-size-adjust: none; padding-top: 0; padding-right: 7px; padding-bottom: 0; padding-left: 7px; background-color: #667CAD;" title="Like this on Facebook" href="https://madmimi.com/s/71a715#" class="social_link" onclick="show_share(&#39;facebook&#39;)" data-mimi-stat-url="[[facebook_like]]"><span style="color: #ffffff;font-size: 13px;">Like</span></a></span>
+      </span>&nbsp;
+    
+                    
+      <span style="display:inline-block;font-size:13px;" class="">
+        <!--[if gte mso 9]>
+          <![endif]--><!--[if gte mso 9]><v:roundrect emaillinkgroup="f842d777-3569-451d-8963-8a3708f58c61" style="height:22px;v-text-anchor:middle;width:46px;" arcsize="50%" stroke="f" fillcolor="#69ABE0" href="#" class="social_link" onclick="show_share('twitter')" data-mimi-stat-url="[[twitter_share]]">
+            <w:anchorlock></w:anchorlock>
+            <v:textbox inset="0,0,0,0">
+              <center>
+                <a emaillinkgroup="f842d777-3569-451d-8963-8a3708f58c61" style="color: #fafafa; display: inline-block; text-decoration: none; white-space: nowrap; height: 20px; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 13px; line-height: 170%; font-weight: normal; mso-text-raise: 4px; padding-top: 0; padding-right: 7px; padding-bottom: 0; padding-left: 7px; background-color: #69ABE0;" title="Share this on Twitter" href="#" class="social_link" onclick="show_share('twitter')" data-mimi-stat-url="[[twitter_share]]"><span style="color: #ffffff; background-color: #69ABE0; font-size: 13px;">Tweet</span></a>
+              </center>
+            </v:textbox>
+          </v:roundrect><![endif]--><!--[if gte mso 9]>
+        <![endif]-->
+        <span class="hide_from_outlook"><a emaillinkgroup="f842d777-3569-451d-8963-8a3708f58c61" style="color: #ffffff; display: inline-block; text-decoration: none; white-space: nowrap; border-radius: 12px; margin-bottom: 10px; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 13px; font-weight: normal; line-height: 165%; text-align: center; width: auto; -webkit-text-size-adjust: none; padding-top: 0; padding-right: 7px; padding-bottom: 0; padding-left: 7px; background-color: #69ABE0;" title="Share this on Twitter" href="https://madmimi.com/s/71a715#" class="social_link" onclick="show_share(&#39;twitter&#39;)" data-mimi-stat-url="[[twitter_share]]"><span style="color: #ffffff;font-size: 13px;">Tweet</span></a></span>
+      </span>&nbsp;
+    
+                    
+      <span style="display:inline-block;font-size:13px;" class="">
+        <!--[if gte mso 9]>
+          <![endif]--><!--[if gte mso 9]><v:roundrect emaillinkgroup="d279ffa2-15c9-495a-bda7-7e023bd28ab8" style="height:22px;v-text-anchor:middle;width:32px;" arcsize="50%" stroke="f" fillcolor="#D32417" href="#" class="social_link" onclick="show_share('pinterest')" data-mimi-stat-url="[[pinterest_share]]">
+            <w:anchorlock></w:anchorlock>
+            <v:textbox inset="0,0,0,0">
+              <center>
+                <a emaillinkgroup="d279ffa2-15c9-495a-bda7-7e023bd28ab8" style="color: #fafafa; display: inline-block; text-decoration: none; white-space: nowrap; height: 20px; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 13px; line-height: 170%; font-weight: normal; mso-text-raise: 4px; padding-top: 0; padding-right: 7px; padding-bottom: 0; padding-left: 7px; background-color: #D32417;" title="Pin to Pinterest" href="#" class="social_link" onclick="show_share('pinterest')" data-mimi-stat-url="[[pinterest_share]]"><span style="color: #ffffff; background-color: #D32417; font-size: 13px;">Pin</span></a>
+              </center>
+            </v:textbox>
+          </v:roundrect><![endif]--><!--[if gte mso 9]>
+        <![endif]-->
+        <span class="hide_from_outlook"><a emaillinkgroup="d279ffa2-15c9-495a-bda7-7e023bd28ab8" style="color: #ffffff; display: inline-block; text-decoration: none; white-space: nowrap; border-radius: 12px; margin-bottom: 10px; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 13px; font-weight: normal; line-height: 165%; text-align: center; width: auto; -webkit-text-size-adjust: none; padding-top: 0; padding-right: 7px; padding-bottom: 0; padding-left: 7px; background-color: #D32417;" title="Pin to Pinterest" href="https://madmimi.com/s/71a715#" class="social_link" onclick="show_share(&#39;pinterest&#39;)" data-mimi-stat-url="[[pinterest_share]]"><span style="color: #ffffff;font-size: 13px;">Pin</span></a></span>
+      </span>&nbsp;
+    
+                    
+      <span style="display:inline-block;font-size:13px;" class="">
+        <!--[if gte mso 9]>
+          <![endif]--><!--[if gte mso 9]><v:roundrect emaillinkgroup="1cd314bf-d62b-438e-9a15-efa466fd1733" style="height:22px;v-text-anchor:middle;width:25px;" arcsize="50%" stroke="f" fillcolor="#ECECEC" href="#" class="social_link" onclick="show_share('plusone')" data-mimi-stat-url="[[plusone_share]]">
+            <w:anchorlock></w:anchorlock>
+            <v:textbox inset="0,0,0,0">
+              <center>
+                <a emaillinkgroup="1cd314bf-d62b-438e-9a15-efa466fd1733" style="color: #fafafa; display: inline-block; text-decoration: none; white-space: nowrap; height: 20px; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 13px; line-height: 170%; font-weight: normal; mso-text-raise: 4px; padding-top: 0; padding-right: 7px; padding-bottom: 0; padding-left: 7px; background-color: #ECECEC;" title="Share this on Google+" href="#" class="social_link" onclick="show_share('plusone')" data-mimi-stat-url="[[plusone_share]]"><span style="color: #DA573B; background-color: #ECECEC; font-size: 13px;">+1</span></a>
+              </center>
+            </v:textbox>
+          </v:roundrect><![endif]--><!--[if gte mso 9]>
+        <![endif]-->
+        <span class="hide_from_outlook"><a emaillinkgroup="1cd314bf-d62b-438e-9a15-efa466fd1733" style="color: #DA573B; display: inline-block; text-decoration: none; white-space: nowrap; border-radius: 12px; margin-bottom: 10px; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 13px; font-weight: normal; line-height: 165%; text-align: center; width: auto; -webkit-text-size-adjust: none; padding-top: 0; padding-right: 7px; padding-bottom: 0; padding-left: 7px; background-color: #ECECEC;" title="Share this on Google+" href="https://madmimi.com/s/71a715#" class="social_link" onclick="show_share(&#39;plusone&#39;)" data-mimi-stat-url="[[plusone_share]]"><span style="color: #DA573B;font-size: 13px;">+1</span></a></span>
+      </span>&nbsp;
+    
+              </td>
+
+        </tr>
+      </tbody></table>
+  <table id="madmimi_wrapper" cellspacing="0" cellpadding="0" align="center" width="590" class=" footer-subtle " bgcolor="transparent !important" style="border-collapse: separate; border-spacing: 0; border-radius: 5px; background-color: transparent !important; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-image: none;">
+    <tbody><tr>
+      <td id="madmimi_body_td" style="border-radius: 5px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: #EBEBEB;" bgcolor="#EBEBEB">
+        <table id="subtle_wrapper" cellspacing="0" cellpadding="0" align="center" width="590" style="border-collapse: separate; border-spacing: 0; border-radius: 5px; margin-top: 0px; margin-right: 0px; margin-bottom: 0px; margin-left: 0px; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" class="borderless subtle">
+              <tbody><tr>
+                <td style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                  <table id="madmimi_header" cellspacing="0" cellpadding="0" align="center" width="590" bgcolor="#EBEBEB" style="border-collapse: collapse; border-spacing: 0; border-radius: 5px 5px 0 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-image: none; background-color: #EBEBEB;">
+                    <tbody><tr>
+                      <td id="madmimi_header_content" width="590" style="border-radius: 5px 5px 0 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                            <img alt="whiteheader" src="./firstissue_files/whiteheader.png" width="590" height="150" style="border-radius: 4px 4px 0 0; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;">
+                      </td>
+                    </tr>
+                  </tbody></table>
+                </td>
+              </tr>
+          <tr>
+            <td style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+              <table id="madmimi_body" cellspacing="0" cellpadding="0" align="left" width="590" style="border-collapse: collapse; border-spacing: 0; border-radius: 0 0 4px 4px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-image: none; background-color: #EBEBEB;" bgcolor="#EBEBEB">
+                <tbody><tr valign="top">
+                  <td id="madmimi_body_content" style="max-width: 100%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 25px; padding-right: 30px; padding-bottom: 20px; padding-left: 30px;">
+                    <div class="module combo-left" style="clear: both; page-break-inside: avoid; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><table width="100%" style="border-collapse: collapse; border-spacing: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"><tbody><tr><td width="530" align="left" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><table align="left" width="182" height="107" style="border-collapse: collapse; border-spacing: 0; float: left; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; border-top-color: #ebebeb; border-right-color: #ebebeb; border-bottom-color: #ebebeb; border-left-color: #ebebeb; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;"><tbody><tr><td align="left" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><div style="float: left; margin-top: 0; margin-right: 20px; margin-bottom: 10px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" class="madmimi-image-container"><img src="./firstissue_files/file1571312715934.jpg" alt="file1571312715934" height="107" width="162" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"></div></td></tr></tbody></table><div class="madmimi-text-container" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><h1 align="left" style="line-height: 1.3em; color: #4E5D6C; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 20px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">In this issue:</h1>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">Our writers explore the theme of beginning your life as a distance runner. What does it feel like to take those first steps on a 2-mile run that seems like you'll never finish? Who was your influence to begin running? Keep reading for more...</p></div></td></tr></tbody></table></div><div class="module divider" style="clear: both; page-break-inside: avoid; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><table width="100%" style="border-collapse: collapse; border-spacing: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"><tbody><tr><td width="530" align="left" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><div class="madmimi-divider-container" style="text-align: center; margin-top: 0; margin-right: auto; margin-bottom: 0.6em; margin-left: auto; padding-top: 0px; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="center"><img src="./firstissue_files/divider-1b71993797d09efd0347798f7d8cab0977a9253845ff32c2482416e5025aa574.png" alt="***" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"></div></td></tr></tbody></table></div><div class="module header" style="clear: both; page-break-inside: avoid; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><table width="100%" style="border-collapse: collapse; border-spacing: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"><tbody><tr><td width="530" align="left" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><div class="madmimi-header-container" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><h2 align="left" style="font-weight: bold; line-height: 1.2em; color: #4E5D6C; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 30px; text-align: left; margin-top: 10px; margin-right: 0; margin-bottom: 10px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><span style="color: #4E5D6C; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 30px; text-align: left;">Run for the Challenge</span></h2></div></td></tr></tbody></table></div><div class="module text" style="clear: both; page-break-inside: avoid; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><table width="100%" style="border-collapse: collapse; border-spacing: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"><tbody><tr><td width="530" align="left" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><div class="madmimi-text-container" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><h2 align="left" style="line-height: 1.2em; color: #4E5D6C; font-family: sans-serif; font-size: 17px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">Spencer Larralde</h2>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">“I’m going to leave you behind!” my step-dad shouted.</p>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify"><em style="font-style: italic; vertical-align: baseline;">Whatever happened to “No man is left behind?”</em>, I thought to myself. <em style="font-style: italic; vertical-align: baseline;">2 miles. Are you kidding me, at 8-minute-mile pace?</em> My lungs were on fire, and I was horribly out of shape. Somehow, I survived the loop around the neighborhood. For the first time in a very long time, I was mentally drained and physically exhausted.</p>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">What motivated and pushed me? Well, obviously my step-dad yelling at me, but I could have just quit and ignored his teasing while I sat on my bed and answered the call to duty by saving the world on my Xbox. I wasn’t going to give up that easy, though. I was going to show my step-dad that I wasn’t just a lazy kid that played video games all day (and at the time I was). Instead, I accepted the challenge and went all in.</p>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">At the finish, I was overwhelmed by a sense of accomplishment. I hadn’t even run a race and it took me 16 minutes to run only 2 miles, but I felt like I was in the Olympics. The feeling of accomplishing something that really required my all was awesome, better than beating any level of some game on my Xbox. I loved the challenge and the feeling of being mentally and physically tough enough to run 2 miles.</p>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">Even today I still run for the challenge, loving it when people tell me I’m crazy. I didn’t stop there; I kept challenging myself to see what I could do. I joined the cross-country team and the track team, and no matter how fast or slow I run, as long as I know I gave everything I had, I’m satisfied.</p>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">Running for 2 years now, I’ve had my fair share of mental battles during races and hard workouts, some won and some lost, but I keep myself motivated by remembering the feeling of accomplishment after beating my goal and by knowing that I need to stay mentally tough.</p>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">The desire to challenge myself didn’t stop at running. It eventually transferred into all the other parts of my life, too: my grades improved, and I started to think more and more about college. Now, no matter how bad I feel during a run or how slow I go, I can remember that I’m running circles around all the couch potatoes and kids playing video games all day.</p>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">So before you think about throwing in the towel and think it’s too late or you’re too tired, remember why you run. It definitely takes a special type of person to be a runner and even a bit of crazy, but just remember that you can be mentally and physically tough.</p></div></td></tr></tbody></table></div><div class="module combo-right" style="clear: both; page-break-inside: avoid; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><table width="100%" style="border-collapse: collapse; border-spacing: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"><tbody><tr><td width="530" align="left" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><table align="right" width="185" height="116" style="border-collapse: collapse; border-spacing: 0; float: right; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; border-top-color: #ebebeb; border-right-color: #ebebeb; border-bottom-color: #ebebeb; border-left-color: #ebebeb; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;"><tbody><tr><td align="right" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><div style="float: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 20px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" class="madmimi-image-container"><img src="./firstissue_files/spencer.jpg" alt="spencer" height="116" width="165" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"></div></td></tr></tbody></table><div class="madmimi-text-container" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><h1 align="left" style="line-height: 1.3em; color: #4E5D6C; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 20px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">About Spencer</h1>
+
+<h2 align="left" style="line-height: 1.2em; color: #4E5D6C; font-family: sans-serif; font-size: 17px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><em style="font-style: italic; vertical-align: baseline;">Writer for Runner's Life</em></h2>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">I love to cruise on long runs…and doughnuts may or may not be my weakness.</p></div></td></tr></tbody></table></div><div class="module divider" style="clear: both; page-break-inside: avoid; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><table width="100%" style="border-collapse: collapse; border-spacing: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"><tbody><tr><td width="530" align="left" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><div class="madmimi-divider-container" style="text-align: center; margin-top: 0; margin-right: auto; margin-bottom: 0.6em; margin-left: auto; padding-top: 0px; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="center"><img src="./firstissue_files/divider-1b71993797d09efd0347798f7d8cab0977a9253845ff32c2482416e5025aa574.png" alt="***" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"></div></td></tr></tbody></table></div><div class="module header" style="clear: both; page-break-inside: avoid; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><table width="100%" style="border-collapse: collapse; border-spacing: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"><tbody><tr><td width="530" align="left" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><div class="madmimi-header-container" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><h2 align="left" style="font-weight: bold; line-height: 1.2em; color: #4E5D6C; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 30px; text-align: left; margin-top: 10px; margin-right: 0; margin-bottom: 10px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><span style="color: #4E5D6C; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 30px; text-align: left;">A Little Competition</span></h2></div></td></tr></tbody></table></div><div class="module text" style="clear: both; page-break-inside: avoid; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><table width="100%" style="border-collapse: collapse; border-spacing: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"><tbody><tr><td width="530" align="left" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><div class="madmimi-text-container" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><h2 align="left" style="line-height: 1.2em; color: #4E5D6C; font-family: sans-serif; font-size: 17px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">Jarrett Chow</h2>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">“Let’s race.”</p>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">I still remember the first time I heard that as if it was yesterday. When I was in the 1st grade,  it was pretty  common to race other kids to a slide and back. The thrill of seeing if you were faster than your  opponent. It still gives me chills even today. I guess that’s the reason I love running. The competition is the best.</p>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">We all start somewhere. My journey began on a playground. What surrounds us when we’re little can really impact our future.</p></div></td></tr></tbody></table></div><div class="module combo-right" style="clear: both; page-break-inside: avoid; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><table width="100%" style="border-collapse: collapse; border-spacing: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"><tbody><tr><td width="530" align="left" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><table align="right" width="180" height="112" style="border-collapse: collapse; border-spacing: 0; float: right; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; border-top-color: #ebebeb; border-right-color: #ebebeb; border-bottom-color: #ebebeb; border-left-color: #ebebeb; border-top-style: solid; border-right-style: solid; border-bottom-style: solid; border-left-style: solid; border-top-width: 1px; border-right-width: 1px; border-bottom-width: 1px; border-left-width: 1px;"><tbody><tr><td align="right" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><div style="float: right; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 20px; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" class="madmimi-image-container"><img src="./firstissue_files/jarrett.jpg" alt="jarrett" height="112" width="160" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"></div></td></tr></tbody></table><div class="madmimi-text-container" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><h1 align="left" style="line-height: 1.3em; color: #4E5D6C; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 20px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">About Jarrett</h1>
+
+<h2 align="left" style="line-height: 1.2em; color: #4E5D6C; font-family: sans-serif; font-size: 17px; text-align: left; margin-top: 0; margin-right: 0; margin-bottom: 10px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><em style="font-style: italic; vertical-align: baseline;">Writer for Runner's Life</em></h2>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">I love running. I just might be the master of indecisiveness, but I'm not quite sure.</p></div></td></tr></tbody></table></div><div class="module divider" style="clear: both; page-break-inside: avoid; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><table width="100%" style="border-collapse: collapse; border-spacing: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"><tbody><tr><td width="530" align="left" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><div class="madmimi-divider-container" style="text-align: center; margin-top: 0; margin-right: auto; margin-bottom: 0.6em; margin-left: auto; padding-top: 0px; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="center"><img src="./firstissue_files/divider-1b71993797d09efd0347798f7d8cab0977a9253845ff32c2482416e5025aa574.png" alt="***" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"></div></td></tr></tbody></table></div><div class="module header" style="clear: both; page-break-inside: avoid; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><table width="100%" style="border-collapse: collapse; border-spacing: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"><tbody><tr><td width="530" align="left" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><div class="madmimi-header-container" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><h2 align="left" style="font-weight: bold; line-height: 1.2em; color: #4E5D6C; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 30px; text-align: left; margin-top: 10px; margin-right: 0; margin-bottom: 10px; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><span style="color: #4E5D6C; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 30px; text-align: left;">Around the Web</span></h2></div></td></tr></tbody></table></div><div class="module text" style="clear: both; page-break-inside: avoid; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><table width="100%" style="border-collapse: collapse; border-spacing: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"><tbody><tr><td width="530" align="left" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><div class="madmimi-text-container" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify"><em style="font-style: italic; vertical-align: baseline;">Hand-selected articles about running from other sources that we think you'll find interesting, helpful, and informative.</em></p>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">Life Like Lunden
+<br>
+<a target="_blank" style="color: #DF691A; text-decoration: none; word-break: break-word;" href="http://blog.runtastic.com/en/life-like-lunden/motivation-selfdiscipline/">Motivation vs. Self-Discipline: why you need both</a></p>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">Competitor.com
+<br>
+<a target="_blank" style="color: #DF691A; text-decoration: none; word-break: break-word;" href="http://running.competitor.com/2014/07/recovery/eat-and-drink-away-sore-muscles_38375">Eat and Drink Away Sore Muscles</a></p>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">Runblogger
+<br>
+<a target="_blank" style="color: #DF691A; text-decoration: none; word-break: break-word;" href="http://runblogger.com/2014/07/how-becoming-a-runner-changes-you-feedback-from-my-beginner-5k-group.html">How Becoming a Runner Changes You</a></p>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">RunnerDude's Blog
+<br>
+<a target="_blank" style="color: #DF691A; text-decoration: none; word-break: break-word;" href="http://ncrunnerdude.blogspot.com/2014/06/new-runners-cheat-sheet.html">New Runner's Cheat Sheet</a></p>
+
+<p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify">Runner's World
+<br>
+<a target="_blank" style="color: #DF691A; text-decoration: none; word-break: break-word;" href="http://www.runnersworld.com/runners-stories/i-bandit">I, Bandit</a></p></div></td></tr></tbody></table></div><div class="module divider" style="clear: both; page-break-inside: avoid; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><table width="100%" style="border-collapse: collapse; border-spacing: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"><tbody><tr><td width="530" align="left" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><div class="madmimi-divider-container" style="text-align: center; margin-top: 0; margin-right: auto; margin-bottom: 0.6em; margin-left: auto; padding-top: 0px; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="center"><img src="./firstissue_files/divider-1b71993797d09efd0347798f7d8cab0977a9253845ff32c2482416e5025aa574.png" alt="***" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"></div></td></tr></tbody></table></div><div class="module text" style="clear: both; page-break-inside: avoid; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><table width="100%" style="border-collapse: collapse; border-spacing: 0; margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;"><tbody><tr><td width="530" align="left" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><div class="madmimi-text-container" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;"><p style="line-height: 1.5em; color: #2B3E50; font-family: Georgia, Times, &#39;Times New Roman&#39;, serif; font-size: 17px; text-align: justify; unicode-bidi: embed; vertical-align: baseline; margin-top: 0; margin-right: 0; margin-bottom: 1.3em; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" align="justify"><em style="font-style: italic; vertical-align: baseline;">Thanks for reading Runner's Life! If you enjoyed this issue, consider forwarding it to friends who you think might enjoy it too. Let us know what we can do better by replying to this email.</em></p></div></td></tr></tbody></table></div>
+                    <div class="outlook-fixer" style="clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+  <table style="border-collapse: collapse; border-spacing: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" width="100%">
+    <tbody><tr>
+      <td align="left" style="font-size: 1px; line-height: 0; clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;" width="530" height="1">
+        <img src="./firstissue_files/outlook_fixer-bd49ed26dfa337b8d7803cb281d8410e089015f7e7006e402de318f960f1e53a.gif" height="1" alt="1px" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" width="530">
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+                  </td>
+                </tr>
+              </tbody></table>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+    <tr>
+      <td id="madmimi_footer_td" bgcolor="transparent !important" style="background-color: transparent !important; border-radius: 0 0 5px 5px; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;">
+        <table id="madmimi_footer" border="0" cellspacing="0" cellpadding="0" class="ui_dark" style="border-collapse: collapse; border-spacing: 0; border-radius: 0 0 4px 4px; width: 100%; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0; background-image: none;">
+          <tbody><tr>
+            <td id="madmimi_footer_content" style="border-radius: 0 0 4px 4px; color: #222; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 25px; padding-right: 30px; padding-bottom: 0; padding-left: 30px; background-color: transparent;" bgcolor="transparent">
+              <table class="toolbar" style="width: 100% !important; border-collapse: collapse; border-spacing: 0; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;">
+                <tbody><tr>
+                  <td id="madmimi_footer_left" style="text-align: center !important; display: block !important; max-width: 100% !important; width: 100% !important; float: left; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: transparent;" align="center !important" bgcolor="transparent">
+                    <div class="footer" align="center" style="color: #EBEBEB; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 13px; text-align: center; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                      ©2016
+                      Runner's Life | runnerslife.mooo.com
+                      <div class="outlook-fixer" style="color: #EBEBEB; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 13px; clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+  <table style="border-collapse: collapse; border-spacing: 0; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" width="100%">
+    <tbody><tr>
+      <td align="left" style="font-size: 1px; line-height: 0; clear: both; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0; background-color: transparent;" width="530" height="1" bgcolor="transparent">
+        <img src="./firstissue_files/outlook_fixer-bd49ed26dfa337b8d7803cb281d8410e089015f7e7006e402de318f960f1e53a.gif" height="1" alt="1px" style="border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;" width="530">
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+                    </div>
+                  </td>
+                </tr>
+              </tbody></table>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </tbody></table>
+  <table id="madmimi_tools_footer" cellspacing="0" cellpadding="0" class="ui_dark" align="center" style="border-collapse: collapse; border-spacing: 0; min-height: 5px; width: 100% !important; text-align: center; margin-top: 0; margin-right: auto; margin-bottom: 0; margin-left: auto; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;">
+    <tbody><tr>
+      <td id="madmimi_footer_content" class="tools" align="center" style="margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 0; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+        <table class="toolbar" style="width: 100% !important; border-collapse: collapse; border-spacing: 0; border-top-style: none; border-right-style: none; border-bottom-style: none; border-left-style: none; border-top-width: 0; border-right-width: 0; border-bottom-width: 0; border-left-width: 0;">
+          <tbody><tr>
+            <td id="madmimi_footer_right" class="" align="center !important" style="text-align: center !important; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; width: 100% !important; margin-top: 0; margin-right: 0; margin-bottom: 0; margin-left: 0; padding-top: 20px; padding-right: 0; padding-bottom: 0; padding-left: 0;">
+                
+    
+      <span style="display:inline-block;font-size:13px;" class="web-view">
+        <!--[if gte mso 9]>
+          <![endif]--><!--[if gte mso 9]><v:roundrect emaillinkgroup="web_link_5339671_1" style="height:22px;v-text-anchor:middle;width:88px;" arcsize="50%" stroke="f" fillcolor="#3e5e7d" href="#">
+            <w:anchorlock></w:anchorlock>
+            <v:textbox inset="0,0,0,0">
+              <center>
+                <a emaillinkgroup="web_link_5339671_1" style="color: #fafafa; display: inline-block; text-decoration: none; white-space: nowrap; margin-right: 2px; height: 20px; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 13px; line-height: 170%; font-weight: normal; mso-text-raise: 4px; text-align: left; direction: ltr; padding-top: 0; padding-right: 7px; padding-bottom: 0; padding-left: 7px; background-color: #3e5e7d;" title="Web Version" href="#"><span style="color: #eaf0f6; background-color: #3e5e7d; font-size: 13px;">Web Version</span></a>
+              </center>
+            </v:textbox>
+          </v:roundrect><![endif]--><!--[if gte mso 9]>
+        <![endif]-->
+        <span class="hide_from_outlook"><a emaillinkgroup="web_link_5339671_1" style="color: #eaf0f6; display: inline-block; text-decoration: none; white-space: nowrap; margin-right: 2px; border-radius: 12px; margin-bottom: 10px; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 13px; font-weight: normal; line-height: 165%; width: auto; -webkit-text-size-adjust: none; text-align: left; direction: ltr; padding-top: 0; padding-right: 7px; padding-bottom: 0; padding-left: 7px; background-color: #3e5e7d;" title="Web Version" href="https://madmimi.com/s/71a715#"><span style="color: #eaf0f6;font-size: 13px;">Web Version</span></a></span>
+      </span>&nbsp;
+    
+
+      
+      <span style="display:inline-block;font-size:13px;" class="manage-subscription">
+        <!--[if gte mso 9]>
+          <![endif]--><!--[if gte mso 9]><v:roundrect emaillinkgroup="manage_subscription_5339671_1" style="height:22px;v-text-anchor:middle;width:88px;" arcsize="50%" stroke="f" fillcolor="#3e5e7d" href="#">
+            <w:anchorlock></w:anchorlock>
+            <v:textbox inset="0,0,0,0">
+              <center>
+                <a emaillinkgroup="manage_subscription_5339671_1" style="color: #fafafa; display: inline-block; text-decoration: none; white-space: nowrap; margin-right: 2px; height: 20px; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 13px; line-height: 170%; font-weight: normal; mso-text-raise: 4px; text-align: left; direction: ltr; padding-top: 0; padding-right: 7px; padding-bottom: 0; padding-left: 7px; background-color: #3e5e7d;" title="Preferences" href="#"><span style="color: #eaf0f6; background-color: #3e5e7d; font-size: 13px;">Preferences</span></a>
+              </center>
+            </v:textbox>
+          </v:roundrect><![endif]--><!--[if gte mso 9]>
+        <![endif]-->
+        <span class="hide_from_outlook"><a emaillinkgroup="manage_subscription_5339671_1" style="color: #eaf0f6; display: inline-block; text-decoration: none; white-space: nowrap; margin-right: 2px; border-radius: 12px; margin-bottom: 10px; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 13px; font-weight: normal; line-height: 165%; width: auto; -webkit-text-size-adjust: none; text-align: left; direction: ltr; padding-top: 0; padding-right: 7px; padding-bottom: 0; padding-left: 7px; background-color: #3e5e7d;" title="Preferences" href="https://madmimi.com/s/71a715#"><span style="color: #eaf0f6;font-size: 13px;">Preferences</span></a></span>
+      </span>&nbsp;
+    
+  
+
+    
+      <span style="display:inline-block;font-size:13px;" class="forward-to">
+        <!--[if gte mso 9]>
+          <![endif]--><!--[if gte mso 9]><v:roundrect emaillinkgroup="e9dc77eb-a6df-4d19-ac84-ed6e5fbd244c" style="height:22px;v-text-anchor:middle;width:60px;" arcsize="50%" stroke="f" fillcolor="#3e5e7d" href="#">
+            <w:anchorlock></w:anchorlock>
+            <v:textbox inset="0,0,0,0">
+              <center>
+                <a emaillinkgroup="e9dc77eb-a6df-4d19-ac84-ed6e5fbd244c" style="color: #fafafa; display: inline-block; text-decoration: none; white-space: nowrap; margin-right: 2px; height: 20px; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 13px; line-height: 170%; font-weight: normal; mso-text-raise: 4px; text-align: left; direction: ltr; padding-top: 0; padding-right: 7px; padding-bottom: 0; padding-left: 7px; background-color: #3e5e7d;" title="Forward" href="#"><span style="color: #eaf0f6; background-color: #3e5e7d; font-size: 13px;">Forward</span></a>
+              </center>
+            </v:textbox>
+          </v:roundrect><![endif]--><!--[if gte mso 9]>
+        <![endif]-->
+        <span class="hide_from_outlook"><a emaillinkgroup="e9dc77eb-a6df-4d19-ac84-ed6e5fbd244c" style="color: #eaf0f6; display: inline-block; text-decoration: none; white-space: nowrap; margin-right: 2px; border-radius: 12px; margin-bottom: 10px; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 13px; font-weight: normal; line-height: 165%; width: auto; -webkit-text-size-adjust: none; text-align: left; direction: ltr; padding-top: 0; padding-right: 7px; padding-bottom: 0; padding-left: 7px; background-color: #3e5e7d;" title="Forward" href="https://madmimi.com/s/71a715#"><span style="color: #eaf0f6;font-size: 13px;">Forward</span></a></span>
+      </span>&nbsp;
+    
+
+    
+      <span style="display:inline-block;font-size:13px;" class="unsubscribe">
+        <!--[if gte mso 9]>
+          <![endif]--><!--[if gte mso 9]><v:roundrect emaillinkgroup="942a3329-0958-49d1-906f-80614f154dee" style="height:22px;v-text-anchor:middle;width:88px;" arcsize="50%" stroke="f" fillcolor="#3e5e7d" href="#">
+            <w:anchorlock></w:anchorlock>
+            <v:textbox inset="0,0,0,0">
+              <center>
+                <a emaillinkgroup="942a3329-0958-49d1-906f-80614f154dee" style="color: #fafafa; display: inline-block; text-decoration: none; white-space: nowrap; margin-right: 2px; height: 20px; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 13px; line-height: 170%; font-weight: normal; mso-text-raise: 4px; text-align: left; direction: ltr; padding-top: 0; padding-right: 7px; padding-bottom: 0; padding-left: 7px; background-color: #3e5e7d;" title="Unsubscribe" href="#"><span style="color: #eaf0f6; background-color: #3e5e7d; font-size: 13px;">Unsubscribe</span></a>
+              </center>
+            </v:textbox>
+          </v:roundrect><![endif]--><!--[if gte mso 9]>
+        <![endif]-->
+        <span class="hide_from_outlook"><a emaillinkgroup="942a3329-0958-49d1-906f-80614f154dee" style="color: #eaf0f6; display: inline-block; text-decoration: none; white-space: nowrap; margin-right: 2px; border-radius: 12px; margin-bottom: 10px; font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 13px; font-weight: normal; line-height: 165%; width: auto; -webkit-text-size-adjust: none; text-align: left; direction: ltr; padding-top: 0; padding-right: 7px; padding-bottom: 0; padding-left: 7px; background-color: #3e5e7d;" title="Unsubscribe" href="https://madmimi.com/s/71a715#"><span style="color: #eaf0f6;font-size: 13px;">Unsubscribe</span></a></span>
+      </span>&nbsp;
+    
+
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+          <div id="madmimi_branding_wrapper" align="center" style="text-align: center; min-width: 630px;">
+	<table class="branding" align="center" width="590" cellspacing="0" cellpadding="0" style="margin-left: auto; margin-right: auto;">
+		<tbody><tr>
+			<td width="590" align="center" style="color: #EBEBEB; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 13px; text-align: center;">
+				<table width="590" cellspacing="0" cellpadding="0" align="center" style="text-align: center; font-size: 11px; font-weight: normal; white-space: nowrap; -webkit-text-size-adjust: none; background-image: none !important;">
+          <tbody><tr>
+            <td style="color: #EBEBEB; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 13px; text-align: center;" width="590" align="center">
+            	<span style="line-height: 10px">&nbsp;</span><br>
+              <a class="mimi_powered_by" emailskiptrack="" style="color: #EBEBEB; font-family: &#39;Helvetica Neue&#39;, Helvetica, Arial, sans-serif; font-size: 13px; text-decoration: none; display: block; padding-bottom: 20px;" href="https://madmimi.com/?">
+                <span style="font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 12px; opacity: 0.75; color: #eaf0f6;">Powered by <em style="font-style: normal; text-decoration: underline; font-weight: bold;">Mad Mimi</em>®</span><!--[if gte mso 9]><br><![endif]--><span style="font-family: Helvetica Neue, Helvetica, Arial, Verdana, sans-serif; font-size: 12px; opacity: 0.25; color: #eaf0f6; display: block; line-height: 1.7;">A GoDaddy® company</span>
+              </a>
+            </td>
+          </tr>
+				</tbody></table>
+			</td>
+		</tr>
+	</tbody></table>
+</div>
+
+
+<div id="madmimi_branding_funk" align="center" style="text-align: center; min-width: 630px;">
+  &nbsp;
+</div>
+
+        </td>
+      </tr>
+    </tbody></table>
+  </div>
+
+
+<div id="overlay_block" style="display:none;"></div>
+
+
+      <div id="mimio_share_facebook" class="mimio_share facebook" style="display:none;">
+        <div class="content">
+          <!--[if (gt IE 9)|!(IE)]><!-->
+           <svg class="iconsvg svg_facebook" viewBox="0 0 16 16" aria-hidden="true">    <path class="facebook" d="M6.362 16.006v-7.31h-2.362v-2.842h2.362v-2.168c0-2.273 1.351-3.686 3.479-3.686 1.281 0 2.143.105 2.143.105v2.563h-1.443c-.915 0-1.344.336-1.344 1.347v1.84h2.693l-.346 2.842h-2.346v7.31h-2.835z"></path>
+</svg>
+          <!--<![endif]-->
+
+          <h1>Like this on Facebook</h1>
+          <div class="share_bar">
+            <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./firstissue_files/_IDqWBiKXtV.html" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div> <script>(function(d, s, id) { var js, fjs = d.getElementsByTagName(s)[0]; if (d.getElementById(id)) return; js = d.createElement(s); js.id = id; js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=152926008054123"; fjs.parentNode.insertBefore(js, fjs); }(document, 'script', 'facebook-jssdk'));</script><div class="fb-like fb_iframe_widget" data-href="https://madmimi.com/s/71a715?o=fm" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=152926008054123&amp;container_width=0&amp;href=https%3A%2F%2Fmadmimi.com%2Fs%2F71a715%3Fo%3Dfm&amp;layout=button_count&amp;locale=en_US&amp;sdk=joey&amp;share=true&amp;show_faces=true"><span style="vertical-align: bottom; width: 106px; height: 20px;"><iframe name="f2101b531a2446" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="./firstissue_files/like.html" style="border: none; visibility: visible; width: 106px; height: 20px;" class=""></iframe></span></div>
+          </div>
+          <a class="close" href="https://madmimi.com/s/71a715#" onclick="hide_share(&#39;facebook&#39;);">×</a>
+          <span class="funk"></span>
+        </div>
+      </div>
+      <div id="mimio_share_twitter" class="mimio_share twitter" style="display:none;">
+        <div class="content">
+          <!--[if (gt IE 9)|!(IE)]><!-->
+           <svg class="iconsvg svg_twitter" viewBox="0 0 16 16" aria-hidden="true">    <path class="twitter" d="M13.35 3.898c.593-.375 1.048-.969 1.263-1.676-.555.347-1.17.599-1.824.735-.524-.589-1.27-.957-2.097-.957-1.586 0-2.872 1.356-2.872 3.029 0 .237.025.469.074.69-2.387-.126-4.504-1.332-5.92-3.165-.247.447-.389.968-.389 1.523 0 1.051.507 1.978 1.278 2.522-.471-.016-.914-.152-1.301-.379v.038c0 1.468.99 2.692 2.304 2.971-.241.069-.495.106-.757.106-.185 0-.365-.019-.54-.054.366 1.203 1.426 2.079 2.683 2.104-.983.813-2.221 1.297-3.567 1.297-.232 0-.46-.014-.685-.042 1.271.86 2.781 1.361 4.403 1.361 5.283 0 8.172-4.616 8.172-8.619l-.008-.392c.561-.427 1.048-.961 1.433-1.568-.515.241-1.069.404-1.65.477z"></path>
+</svg>
+          <!--<![endif]-->
+
+          <h1>Share this on Twitter</h1>
+          <div class="share_bar">
+            <iframe id="twitter-widget-0" scrolling="no" frameborder="0" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" title="Twitter Tweet Button" src="./firstissue_files/tweet_button.f7908d4abf5ce27173c69bdbb93aedb6.en.html" data-url="https://madmimi.com/s/71a715?o=tm" style="position: static; visibility: visible; width: 61px; height: 20px;"></iframe><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          </div>
+          <a class="close" href="https://madmimi.com/s/71a715#" onclick="hide_share(&#39;twitter&#39;);">×</a>
+          <span class="funk"></span>
+        </div>
+      </div>
+      <div id="mimio_share_plusone" class="mimio_share plusone" style="display:none;">
+        <div class="content">
+          <!--[if (gt IE 9)|!(IE)]><!-->
+           <svg class="iconsvg svg_plusone" viewBox="0 0 16 16" aria-hidden="true">    <path fill="#000" class="gplus" d="M8.127 8.987l-.652-.509c-.198-.166-.47-.384-.47-.785 0-.402.271-.658.507-.894.759-.602 1.518-1.242 1.518-2.591 0-1.387-.867-2.117-1.283-2.463h1.121l1.176-.744h-3.564c-.978 0-2.387.233-3.419 1.09-.778.675-1.157 1.606-1.157 2.445 0 1.423 1.085 2.865 3.002 2.865.181 0 .379-.018.578-.037-.09.219-.18.402-.18.712 0 .565.288.912.543 1.24-.814.056-2.335.147-3.456.84-1.067.639-1.392 1.569-1.392 2.225 0 1.351 1.265 2.609 3.888 2.609 3.111 0 4.758-1.733 4.758-3.448 0-1.26-.723-1.88-1.519-2.555zm-2.369-2.098c-1.556 0-2.261-2.025-2.261-3.247 0-.476.09-.967.397-1.35.29-.365.795-.602 1.267-.602 1.5 0 2.278 2.043 2.278 3.357 0 .329-.036.911-.452 1.332-.291.292-.778.51-1.23.51zm.018 7.336c-1.935 0-3.183-.932-3.183-2.227s1.157-1.733 1.555-1.878c.759-.257 1.736-.293 1.899-.293l.415.018c1.376.985 1.973 1.477 1.973 2.409 0 1.13-.923 1.971-2.66 1.971zM13.951 6.978v-1.978h-.977v1.978h-1.974v.988h1.974v1.99h.977v-1.99h1.984v-.988h-1.984z"></path>
+</svg>
+          <!--<![endif]-->
+
+          <h1>Share on Google+</h1>
+          <div class="share_bar">
+            <div id="___plusone_0" style="text-indent: 0px; margin: 0px; padding: 0px; background: transparent; border-style: none; float: none; line-height: normal; font-size: 1px; vertical-align: baseline; display: inline-block; width: 32px; height: 20px;"><iframe frameborder="0" hspace="0" marginheight="0" marginwidth="0" scrolling="no" style="position: static; top: 0px; width: 32px; margin: 0px; border-style: none; left: 0px; visibility: visible; height: 20px;" tabindex="0" vspace="0" width="100%" id="I0_1481137091979" name="I0_1481137091979" src="./firstissue_files/fastbutton.html" data-gapiattached="true" title="+1"></iframe></div><script type="text/javascript">(function() {var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;po.src = 'https://apis.google.com/js/plusone.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);})();</script>
+          </div>
+          <a class="close" href="https://madmimi.com/s/71a715#" onclick="hide_share(&#39;plusone&#39;);">×</a>
+          <span class="funk"></span>
+        </div>
+      </div>
+      <div id="mimio_share_pinterest" class="mimio_share pinterest" style="display:none;">
+        <div class="content">
+          <!--[if (gt IE 9)|!(IE)]><!-->
+           <svg class="iconsvg svg_pinterest" viewBox="0 0 16 16" aria-hidden="true">    <path class="pinterest" d="M8.302 2c-3.525 0-5.302 2.527-5.302 4.634 0 1.276.483 2.411 1.519 2.834.17.069.322.002.371-.186l.152-.595c.05-.186.03-.251-.107-.414-.299-.352-.49-.809-.49-1.455 0-1.875 1.403-3.553 3.653-3.553 1.992 0 3.087 1.217 3.087 2.843 0 2.139-.947 3.944-2.352 3.944-.776 0-1.357-.642-1.171-1.429.223-.94.655-1.954.655-2.632 0-.607-.326-1.114-1.001-1.114-.793 0-1.431.821-1.431 1.92 0 .7.237 1.174.237 1.174l-.954 4.042c-.283 1.2-.043 2.671-.022 2.819.012.088.125.109.176.042.073-.096 1.018-1.262 1.339-2.428.091-.33.522-2.039.522-2.039.258.492 1.011.925 1.812.925 2.385 0 4.003-2.174 4.003-5.084 0-2.201-1.864-4.25-4.697-4.25z"></path>
+</svg>
+          <!--<![endif]-->
+
+          <h1>Pin to Pinterest</h1>
+          <div class="share_bar">
+            <a href="https://pinterest.com/pin/create/button/?description=Check+out+this+Mad+Mimi+newsletter&amp;media=https%3A%2F%2Fsnaps.madmimi.com%2Fv2%2Fthumbs.php%3Fsize%3Db%26wait%3D120%26url%3Dhttps%253A%252F%252Fmadmimi.com%252Fp%252F71a715&amp;url=https%3A%2F%2Fmadmimi.com%2Fs%2F71a715%3Fo%3Dpm" class="pin-it-button" count-layout="none" style="position:relative;top:1px"><img border="0" src="./firstissue_files/PinExt.png" title="Pin It"></a>
+          </div>
+          <a class="close" href="https://madmimi.com/s/71a715#" onclick="hide_share(&#39;pinterest&#39;);">×</a>
+          <span class="funk"></span>
+        </div>
+      </div>
+      <div id="mimio_share_linked_in" class="mimio_share linked_in" style="display:none;">
+        <div class="content">
+          <!--[if (gt IE 9)|!(IE)]><!-->
+           <svg class="iconsvg svg_linked_in" viewBox="0 0 16 16" aria-hidden="true">    <path class="linked_in" d="M3 12v-6.231h2.143v6.231h-2.143zm1.078-6.923c-.664 0-1.078-.462-1.078-1.038.012-.59.413-1.039 1.065-1.039.652 0 1.078.449 1.078 1.039 0 .577-.413 1.038-1.053 1.038h-.012zm2.494 6.923h2.106v-3.4c0-.182.014-.364.069-.494.152-.364.499-.74 1.081-.74.762 0 1.067.558 1.067 1.377v3.257h2.106v-3.491c0-1.87-1.039-2.74-2.425-2.74-1.136 0-1.635.61-1.912 1.026h.014v-.883h-2.106c.028.571 0 6.088 0 6.088z"></path>
+</svg>
+          <!--<![endif]-->
+
+          <h1>Share on LinkedIn</h1>
+          <div class="share_bar">
+            <a href="http://www.linkedin.com/shareArticle?mini=true&amp;url=https%3A%2F%2Fmadmimi.com%2Fs%2F71a715%3Fo%3Dm&amp;title=Check+out+this+newsletter+from+Runner%27s+Life&amp;summary=Run+for+the+Challenge+-+August+2014+Runner%27s+Life" target="_&quot;blank&quot;"><img src="./firstissue_files/linked_in_share.gif"></a>
+          </div>
+          <a class="close" href="https://madmimi.com/s/71a715#" onclick="hide_share(&#39;linked_in&#39;);">×</a>
+          <span class="funk"></span>
+        </div>
+      </div>
+
+<script src="./firstissue_files/jquery-23a79485ab5898a608db617cd7ab074b08527a7982cc35b447e48324f3047315.js"></script><iframe name="oauth2relay403913357" id="oauth2relay403913357" src="./firstissue_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe>
+<script>jQuery.noConflict()</script>
+
+<script>
+  jQuery(document).ready(function() {
+    add_click_handlers();
+  });
+
+  function add_click_handlers() {
+    jQuery('.social_link').click(function(e) {
+      e.preventDefault();
+      track_click(e);
+    });
+  }
+
+  function animateShare(name) {
+    var elem = document.getElementById("mimio_share_" + name);
+    if(elem) {
+      elem.className += " animation";
+    }
+  }
+
+  function show_share(share) {
+    hide_all_shares();
+    var mimioShare = document.getElementById('mimio_share_' + share);
+    console.log(share, mimioShare)
+    if(mimioShare) {
+      document.getElementById('overlay_block').style.display = 'block'
+      mimioShare.style.display = 'block';
+      animateShare(share);
+    }
+  }
+
+  function hide_share(share) {
+    var mimioShare = document.getElementById('mimio_share_' + share);
+    if(mimioShare) {
+      mimioShare.style.display = 'none';
+      document.getElementById('overlay_block').style.display = 'none'
+    }
+  }
+
+  function hide_all_shares() {
+    var share_types = ["facebook","twitter","plusone","pinterest","linked_in"];
+    for(var i = 0; i < share_types.length; i++) {
+      hide_share(share_types[i]);
+    }
+  }
+
+  function track_click(e) {
+    var statUrl = e.currentTarget.attributes['data-mimi-stat-url'];
+    if (statUrl != undefined) {
+      var href = statUrl.value;
+
+      // If we're viewing a promotion with a 'fake' promotion attempt, then these values will be macros, like [[facebook_like]]
+      if(href.toString().indexOf('[[') != 0) {
+        jQuery.ajax({
+          url: href,
+          dataType: 'jsonp'
+        });
+      }
+    }
+  }
+
+  var wrapper = document.getElementById("madmimi_outer_wrapper");
+  if (wrapper) {
+    wrapper.className = "animation";
+  }
+</script>
+<script src="./firstissue_files/application.js"></script><script>window.onload = function() { parent.Mimi.Promotion.Webview.get(); };</script>
+<iframe id="rufous-sandbox" scrolling="no" frameborder="0" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: none;" title="Twitter analytics iframe" src="./firstissue_files/saved_resource.html"></iframe></body></html>
